@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>New Doctor</title>
+</head>
+
+<body>
+    <fieldset>
+        <legend>Doctor Details</legend>
+        <form name="frmRec" method="post" action="insert_doctor.php" enctype="multipart/form-data">
+            <p>
+                <label for="doctorName">Doctor Name </label>
+                <input type="text" name="doctorName" id="doctorName">
+            </p>
+            <p>
+                <label for="deptID">Department ID</label>
+                <input type="text" name="deptID" id="deptID">
+            </p>
+            <p>
+                <label for="workEmail">Email</label>
+                <input type="text" name="workEmail" id="workEmail">
+            </p>
+            <p>
+                <label for="phone">Phone No.</label>
+                <input type="text" name="phone" id="phone">
+            </p>
+            <p>
+                <label for="doctorIMG">Profile Photo (.jpeg)</label>
+                <input type="file" name="doctorIMG" id="doctorIMG">
+            </p>
+            <p>
+                <label for="joinDate">Join Date</label>
+                <input type="date" name="joinDate" id="joinDate">
+            </p>
+            <p>&nbsp;</p>
+            <p>
+                <input type="submit" name="Submit" id="Submit" value="Submit">
+            </p>
+        </form>
+    </fieldset>
+</body>
+</html>

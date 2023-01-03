@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>New Patient Record</title>
+</head>
+
+<body>
+    <fieldset>
+        <legend>Record Details</legend>
+        <form name="frmRec" method="post" action="insert_record.php" enctype="multipart/form-data">
+            <p>
+                <label for="patientID">Patient ID </label>
+                <input type="text" name="patientID" id="patientID">
+            </p>
+            <p>
+                <label for="doctorID">Doctor ID</label>
+                <input type="text" name="doctorID" id="doctorID">
+            </p>
+            <p>
+                <label for="prescriptionIMG">Prescription (.jpeg)</label>
+                <input type="file" name="prescriptionIMG" id="prescriptionIMG">
+            </p>
+            <p>
+                <label for="testsIMG">Tests (.jpeg)</label>
+                <input type="file" name="testsIMG" id="testsIMG">
+            </p>
+            <p>
+                <label for="payment">Payment Rs.</label>
+                <input type="text" name="payment" id="payment">
+            </p>
+            <p>
+                <label for="consultationDate">Consultation Date</label>
+                <input type="date" name="consultationDate" id="consultationDate">
+            </p>
+            <p>&nbsp;</p>
+            <p>
+                <input type="submit" name="Submit" id="Submit" value="Submit">
+            </p>
+        </form>
+    </fieldset>
+</body>
+</html>
